@@ -43,8 +43,6 @@ make install
 
 By default, the tests will create and use a mock server, unless port 7356 is use, in which case it will assume a real Gqrx instance is running, and test against that.  The default location for a server can overriden by passing the environment variables `GQRX_REMOTE_TEST_HOST` and `GQRX_REMOTE_TEST_PORT` to the tests.
 
-By default, the tests will create and use a mock server. A real Gqrx instance can be tested against by passing the environment variables `GQRX_REMOTE_TEST_HOST` and `GQRX_REMOTE_TEST_PORT` to the tests.
-
 
 # Setting up Gqrx
 
