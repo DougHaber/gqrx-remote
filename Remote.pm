@@ -429,19 +429,19 @@ call will return C<undef>.
 
 * GQRX::Remote on GitHub:
 
-  https://github.com/DougHaber/gqrx-remote
+https://github.com/DougHaber/gqrx-remote
 
 * Example script for collecting signal strength data: (included in distribution)
 
-  https://github.com/DougHaber/gqrx-remote/blob/master/example
+https://github.com/DougHaber/gqrx-remote/blob/master/example
 
 * Gqrx:
 
-  http://gqrx.dk/
+http://gqrx.dk/
 
 * Gqrx remote control protocol documentation:
 
-  http://gqrx.dk/doc/remote-control
+http://gqrx.dk/doc/remote-control
 
 
 =head1 AUTHOR
