@@ -1,6 +1,8 @@
 package GQRX::Remote;
 
 use IO::Socket::INET;
+
+use warnings;
 use strict;
 
 our $VERSION = '1.0';
