@@ -72,7 +72,7 @@ sub main {
     }
 
     $fd->autoflush(1); # Immediately write to the file
-    print $fd join(',', 'Frequency (Khz)', '75th Percentile', 'Median', '25th Percentile') . "\n";
+    print $fd join(',', 'Frequency (kHz)', '75th Percentile', 'Median', '25th Percentile') . "\n";
 
     $remote->set_demodulator_mode($OPTIONS{demodulator});
     $remote->set_frequency($start_frequency);

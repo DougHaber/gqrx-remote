@@ -19,7 +19,7 @@ $remote->connect();
 
 # Set up some options
 $remote->set_demodulator_mode('AM');
-$remote->set_frequency(44000000);  # 44,000 khz
+$remote->set_frequency(44000000);  # 44,000 kHz
 
 # Retrieve the signal strength
 my $strength = $remote->get_signal_strength();

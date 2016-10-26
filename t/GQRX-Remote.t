@@ -34,7 +34,7 @@ sub run_tests {
     ok ($remote->connect(), "Connect to GQRX");
     ok ($remote->connect(), "Connect while connected (reconnect)");
 
-    ok ($remote->set_frequency(100000000), "Set frequency to 100Mhz");
+    ok ($remote->set_frequency(100000000), "Set frequency to 100MHz");
     is ($remote->get_frequency(), 100000000, "Get frequency");
 
     is ($remote->set_demodulator_mode("INVALID"), undef, "Set Demodulator Mode to INVALID");

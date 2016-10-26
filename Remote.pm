@@ -266,7 +266,7 @@ GQRX::Remote - Control Gqrx using the Remote Control protocol
 
     # Set up some options
     $remote->set_demodulator_mode('AM');
-    $remote->set_frequency(44000000);  # 44,000 khz
+    $remote->set_frequency(44000000);  # 44,000 kHz
 
     # Retrieve the signal strength
     my $strength = $remote->get_signal_strength();
@@ -348,7 +348,7 @@ should be captured and handled.
     $frequency = $remote->get_frequency();
 
     # To set the frequency:
-    $remote->set_frequency(4400000); # 44,000 Khz
+    $remote->set_frequency(4400000); # 44,000 kHz
 
 All frequency values are in hertz.
 
