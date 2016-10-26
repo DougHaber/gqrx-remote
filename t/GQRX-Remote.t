@@ -51,10 +51,9 @@ sub run_tests {
 
 sub start_server {
     # Create a mock server
-    # If $TEST_HOST is not 127.0.0.1, assume GQRX is already listening
-    # If the port is unavailable, assume GQRX is already listening
-    # and test against the real server.  Otherwise, fork and
-    # create a simple mock server.
+    # If $TEST_HOST is not 127.0.0.1 or if the port is unavailable,
+    # assume GQRX is already listening and test against the real
+    # server.  Otherwise, fork and create a simple mock server.
     # Return the PID of the mock server or undef if none
     my $socket;
     my $select_set;
