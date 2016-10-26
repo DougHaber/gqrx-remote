@@ -51,3 +51,16 @@ By default, the tests will create and use a mock server. A real Gqrx instance ca
 In order to use the Gqrx Remote Protocol, the Gqrx application must be running with the remote turned on. To enable this, click on `Tools->Remote Control` in the menubar. This will need to be done each time Gqrx runs.
 
 Earlier versions of Gqrx didn't have proper settings for allowing remote connections out of the box. Depending on your version, or if you need to allow connections from a host other than the localhost, you may need to modify the settings. To do this, go to `Tools->Remote Control Settings`. Make sure Gqrx is configured to allow connections from the host you plan on running the script on.
+
+
+# Copyright and License
+
+```
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2016 by Douglas Haber
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.20.2 or,
+at your option, any later version of Perl 5 you may have available.
+```
