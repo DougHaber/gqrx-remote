@@ -1,0 +1,11 @@
+# Emacs temp files
+*~
+\#*\#
+
+# Perl build files
+MYMETA.json
+MYMETA.yml
+Makefile
+Makefile.old
+blib/
+pm_to_blib
