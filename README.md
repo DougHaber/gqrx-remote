@@ -56,8 +56,6 @@ Earlier versions of Gqrx didn't have proper settings for allowing remote connect
 # Copyright and License
 
 ```
-COPYRIGHT AND LICENCE
-
 Copyright (C) 2016 by Douglas Haber
 
 This library is free software; you can redistribute it and/or modify
