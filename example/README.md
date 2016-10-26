@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an example script demonstrating the usage of GQRX::Remote.  The script generates data on signal strength for a spectrum of frequencies.  It does this by walking through the frequencies and taking multiple samples of the signal strength at each stop.  It then writes out the frequency and the 10th, 50th, and 90th percentile of signal strength values.
+This is an example script demonstrating the usage of GQRX::Remote.  The script generates data on signal strength for a range of frequencies.  It does this by walking through the frequencies and taking multiple samples of the signal strength at each stop.  It then writes out the frequency and the 10th, 50th, and 90th percentile of signal strength values.
 
 The data generated from this script can be useful for comparing different antenna configurations and other options to see how it impacts the results.
 
