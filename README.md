@@ -1,6 +1,6 @@
 # GQRX::Remote
 
-This module provides a Perl interface over the [Gqrx Remote protocol](http://gqrx.dk/doc/remote-control).
+This module provides a Perl interface for the [Gqrx remote control protocol](http://gqrx.dk/doc/remote-control).
 
 GQRX::Remote only uses core Perl modules, and so has no dependencies. It should run anywhere Perl can run.
 

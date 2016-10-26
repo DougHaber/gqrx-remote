@@ -1,7 +1,8 @@
 GQRX-Remote version 1.0
 ========================
 
-This module provides a Perl interface over the Gqrx Remote protocol.
+This module provides a Perl interface for the Gqrx remote control
+protocol.
 
 For more details on this module and its usage, please see the
 README.md file including with the distribution and POD documentation.
