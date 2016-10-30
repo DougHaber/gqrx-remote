@@ -350,7 +350,7 @@ should be captured and handled.
     $frequency = $remote->get_frequency();
 
     # To set the frequency:
-    $remote->set_frequency(4400000); # 44,000 kHz
+    $remote->set_frequency(44000000); # 44,000 kHz
 
 All frequency values are in hertz.
 
