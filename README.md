@@ -29,7 +29,9 @@ my $strength = $remote->get_signal_strength();
 
 For detailed usage information and examples, please see the [POD documentation](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.0/Remote.pm).
 
-An example script using GQRX::Remote is [provided in the distribution](https://github.com/DougHaber/gqrx-remote/tree/master/example/).
+An example script using GQRX::Remote to plot signal strength by frequency is [provided in the distribution](https://github.com/DougHaber/gqrx-remote/tree/master/example/).
+
+Another example can be found in [gqrx-ghostbox](https://github.com/DougHaber/gqrx-ghostbox).  It is a utility that uses GQRX::Remote to make Gqrx behave like a ghost box.
 
 
 # Installation
