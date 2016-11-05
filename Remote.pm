@@ -139,7 +139,10 @@ sub set_frequency {
     my ($self, $frequency) = @_;
     my $response = $self->command("F $frequency");
 
-    if ($response ne 'RPRT 0') {
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Set frequency failed. Unexpected response: $response");
         return (undef);
     }
@@ -159,7 +162,10 @@ sub set_demodulator_mode {
     my ($self, $mode) = @_;
     my $response = $self->command("M $mode");
 
-    if ($response ne 'RPRT 0') {
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Set demodulator mode failed. Unexpected response: $response");
         return (undef);
     }
@@ -193,7 +199,10 @@ sub set_squelch_threshold {
     my ($self, $level) = @_;
     my $response = $self->command("L SQL $level");
 
-    if ($response ne 'RPRT 0') {
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Set demodulator mode failed. Unexpected response: $response");
         return (undef);
     }
@@ -213,7 +222,11 @@ sub set_recorder_status {
     my ($self, $status) = @_;
     my $response = $self->command("U RECORD $status");
 
-    if ($response ne 'RPRT 0') {
+
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Failed to set recorder state.  Unexpected response: $response");
         return (undef);
     }
@@ -226,7 +239,10 @@ sub start_recording {
     my ($self) = @_;
     my $response = $self->command("AOS");
 
-    if ($response ne 'RPRT 0') {
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Failed to start recording.  Unexpected response: $response");
         return (undef);
     }
@@ -239,7 +255,10 @@ sub stop_recording {
     my ($self) = @_;
     my $response = $self->command("LOS");
 
-    if ($response ne 'RPRT 0') {
+    if (! defined($response)) {
+        return (undef);
+    }
+    elsif ($response ne 'RPRT 0') {
         $self->_set_error("Failed to stop recording.  Unexpected response: $response");
         return (undef);
     }
