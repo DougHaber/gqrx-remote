@@ -203,22 +203,22 @@ sub set_squelch_threshold {
 
 
 sub get_recorder_status {
-   my ($self) = @_;
+    my ($self) = @_;
 
-   return ($self->command("u RECORD"));
+    return ($self->command("u RECORD"));
 }
 
 
 sub set_recorder_status {
-   my ($self, $status) = @_;
-   my $response = $self->command("U RECORD $status");
+    my ($self, $status) = @_;
+    my $response = $self->command("U RECORD $status");
 
-   if ($response ne 'RPRT 0') {
-       $self->_set_error("Failed to set recorder state.  Unexpected response: $response");
-       return (undef);
-   }
+    if ($response ne 'RPRT 0') {
+        $self->_set_error("Failed to set recorder state.  Unexpected response: $response");
+        return (undef);
+    }
 
-   return (1);
+    return (1);
 }
 
 
