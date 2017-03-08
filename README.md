@@ -4,7 +4,7 @@ This module provides a Perl interface for the [Gqrx remote control protocol](htt
 
 GQRX::Remote only uses core Perl modules, and so has no dependencies. It should run anywhere Perl can run.
 
-GQRX::Remote is on [CPAN](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.0/Remote.pm).
+GQRX::Remote is on [CPAN](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.1/Remote.pm).
 
 The [Gqrx](http://gqrx.dk/) application itself officially runs on Linux, MacOS and Raspberry Pi. An unoffical version exists for Windows. For more information, see the [Gqrx download page](http://gqrx.dk/download).
 
@@ -27,7 +27,7 @@ $remote->set_frequency(44000000);  # 44,000 kHz
 my $strength = $remote->get_signal_strength();
 ```
 
-For detailed usage information and examples, please see the [POD documentation](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.0/Remote.pm).
+For detailed usage information and examples, please see the [POD documentation](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.1/Remote.pm).
 
 An example script using GQRX::Remote to plot signal strength by frequency is [provided in the distribution](https://github.com/DougHaber/gqrx-remote/tree/master/example/).
 
@@ -36,7 +36,7 @@ Another example can be found in [gqrx-ghostbox](https://github.com/DougHaber/gqr
 
 # Installation
 
-GQRX::Remote is on [CPAN](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.0/Remote.pm), and may be installed using that.
+GQRX::Remote is on [CPAN](http://search.cpan.org/~dhaber/GQRX-Remote-1.0.1/Remote.pm), and may be installed using that.
 
 To install this module from source:
 
