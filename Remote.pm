@@ -5,7 +5,7 @@ use IO::Socket::INET;
 use warnings;
 use strict;
 
-our $VERSION = '1.0.1';
+our $VERSION = '2.0.0';
 
 
 sub new {
@@ -134,6 +134,26 @@ sub command {
     return ($self->read_line(%opt));
 }
 
+sub command2 {
+    my $self = shift();
+    my $command = shift();
+    my (%opt) = @_;
+    my $buf;
+
+    if (! $self->{_connection}) {
+        $self->_set_error("Failed to send: Not connected");
+        return (undef);
+    }
+    elsif (! $self->{_connection}->connected()) {
+        $self->_set_error("Failed to send: Connection lost");
+        return (undef);
+    }
+
+    $self->{_connection}->send($command . "\n");
+
+    return ($self->read_line(%opt), $self->read_line(%opt));
+}
+
 
 sub set_frequency {
     my ($self, $frequency) = @_;
@@ -177,7 +197,7 @@ sub set_demodulator_mode {
 sub get_demodulator_mode {
     my ($self) = @_;
 
-    return ($self->command("m"));
+    return ($self->command2("m"));
 }
 
 
@@ -380,7 +400,7 @@ call will return C<undef>.
 =head2 DEMODULATOR MODE
 
     # To get the demodulator_mode:
-    $demodulator_mode = $remote->get_demodulator_mode();
+    my ($demodulator_mode, $width) = $remote->get_demodulator_mode();
 
     # To set the demodulator_mode:
     $remote->set_demodulator_mode('WFM');
