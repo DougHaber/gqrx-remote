@@ -1,5 +1,8 @@
 Revision history for Perl extension GQRX::Remote.
 
+2.0.0	2019-01-19/23:45
+		- Fix get_demodulator_mode.
+
 1.0.1  Tue Mar 7, 2017
 	- Fix errors for disconnect warnings
         - Lower Perl version dependency to v5.6.2
